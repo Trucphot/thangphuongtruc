@@ -1,102 +1,142 @@
-/* General Reset */
+/*
+
+filename: [your name]
+
+author: [your name]
+
+created: [enter date]
+
+last modified: [enter date]
+
+description: [html files it refers to (if known)]
+
+*/
+/* Header styles */
+
+/* --- Cài đặt chung và Biến --- */
+:root {
+    --shield-blue: #00ff77;
+    --text-light: #ffffff;
+    --text-secondary: #d1d1d1;
+    --background-dark-overlay: rgba(10, 10, 20, 0.75); /* Lớp phủ màu tối, hơi xanh */
+    --font-family: 'Roboto', sans-serif;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #0d1117;
-  color: #f0f6fc;
+    font-family: var(--font-family);
+    background-color: #f4f4f4; /* Màu nền cho phần còn lại của trang */
+    color: #333;
 }
 
-/* Header */
-header {
-  background: #161b22;
-  color: #f0f6fc;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #30363d;
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
+
+/* --- Phần Hero và Nền --- */
+.hero-section {
+    min-height: 65vh; /* Chiều cao tối thiểu của phần đầu */
+    color: var(--text-light);
+
+    /* Lớp phủ tối trên hình nền - ĐÂY LÀ PHẦN QUAN TRỌNG */
+    background: 
+        linear-gradient(var(--background-dark-overlay), var(--background-dark-overlay)), 
+        url(../images/project1_background.jpg); /* << THAY HÌNH CỦA BẠN VÀO ĐÂY */
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Thanh điều hướng (Navbar) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
 
 .logo {
-  width: 60px;
-  height: 60px;
+  display: flex;               /* xếp theo hàng ngang */
+  align-items: center;         /* căn giữa theo chiều dọc */
+  gap: 8px;                    /* khoảng cách giữa logo và chữ */
+  line-height: 1.1;
 }
 
-/* Navigation Menu */
-nav {
-  margin-top: 15px;
+.logo-image {
+  height: 40px;                /* chỉnh kích thước logo */
+  width: auto;                 /* giữ tỷ lệ gốc */
 }
-
-.menu {
-  list-style: none;
+.logo-text {
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  flex-direction: column;   /* xếp chữ theo chiều dọc */
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #58a6ff;
-  font-weight: bold;
-  transition: color 0.3s;
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--shield-blue);
 }
 
-.menu li a:hover {
-  color: #f0f6fc;
+.logo-sub {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
 }
 
-/* Main Section */
-main {
-  padding: 40px 20px;
-  text-align: center;
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
 }
 
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #58a6ff;
+.nav-menu a {
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.intro p {
-  max-width: 700px;
-  margin: 0 auto 25px auto;
-  font-size: 1.1rem;
+.nav-menu a:hover {
+    color: var(--shield-blue);
 }
 
-.banner {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+/* --- Nội dung chính giữa (Hero Content) --- */
+.hero-content {
+    /* Căn giữa nội dung theo chiều dọc và ngang */
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5vh; /* Đẩy nội dung lên một chút */
 }
 
-/* Footer */
-footer {
-  background: #161b22;
-  text-align: center;
-  padding: 15px;
-  border-top: 2px solid #30363d;
-  margin-top: 30px;
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 800px;
+    margin-bottom: 1rem;
 }
 
-footer a {
-  color: #58a6ff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
+.hero-content p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text-secondary);
 }
