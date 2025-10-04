@@ -1,16 +1,4 @@
-/*
 
-filename: [your name]
-
-author: [your name]
-
-created: [enter date]
-
-last modified: [enter date]
-
-description: [html files it refers to (if known)]
-
-*/
 /* Header styles */
 /*
 
@@ -154,3 +142,7 @@ a {
     font-weight: 400;
     color: var(--text-secondary);
 }
+
+/* --- Phần nội dung chính của trang (Main Content) --- */
+ul {margin-left: 20px;
+    list-style-type:disc;}
