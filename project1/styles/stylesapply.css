@@ -1,0 +1,124 @@
+/* Header styles */
+
+/* --- General Settings and Variables --- */
+:root {
+    --shield-green: #00ff77;
+    --text-light: #ffffff;
+    --text-secondary: #d1d1d1;
+    --background-dark-overlay: rgba(10, 10, 20, 0.75); 
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
+footer {
+    background: url(../images/backgroundheader.jpg);
+    color: var(--text-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- hero part and background image --- */
+.hero-section {
+    min-height: 45vh;
+    color: var(--text-light);
+    
+    background: 
+        linear-gradient(var(--background-dark-overlay), var(--background-dark-overlay)), 
+        url(../images/backgroundheader.jpg); 
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    align-items: center;
+    text-align: left;
+    margin-top: 90px;
+    font-size: 1.8rem;
+    padding-left: 90px;
+    
+}
+.hero-content p{
+    font-size: 1rem;
+    margin-bottom: 1rem;    
+}
+
+/* --- Navbar---- */
+.navbar {
+    display: flex;    
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.logo {
+  display: flex;               
+  align-items: center;         
+  gap: 8px;                   
+  line-height: 1.1;
+}
+
+.logo-image {
+  height: 40px;               
+  width: auto;                 
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;   
+}
+
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--shield-green);
+}
+
+.logo-sub {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    gap: 120px;
+    color: var(--text-light);
+    font-weight: 500;  
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.nav-menu a:hover {
+    color: var(--shield-green);
+}
+
+
+
