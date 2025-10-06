@@ -146,3 +146,5 @@ a {
 /* --- Phần nội dung chính của trang (Main Content) --- */
 ul {margin-left: 20px;
     list-style-type:disc;}
+ol {margin-left: 20px;
+    list-style-type:decimal;}
