@@ -17,10 +17,10 @@ description: [html files it refers to (if known)]
 
 /* --- Cài đặt chung và Biến --- */
 :root {
-    --shield-blue: #00ff77;
+    --shield-green: #00ff77;
     --text-light: #ffffff;
     --text-secondary: #d1d1d1;
-    --background-dark-overlay: rgba(10, 10, 20, 0.75); /* Lớp phủ màu tối, hơi xanh */
+    --background-dark-overlay: rgba(10, 10, 20, 0.75); 
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -32,14 +32,21 @@ description: [html files it refers to (if known)]
 
 body {
     font-family: var(--font-family);
-    background-color: #f4f4f4; /* Màu nền cho phần còn lại của trang */
+    background-color: #f4f4f4; 
     color: #333;
+}
+
+footer {
+    background: url(../images/backgroundheader.jpg);
+    color: var(--text-light);
 }
 
 .container {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 15px;
+    
 }
 
 a {
@@ -47,15 +54,14 @@ a {
     color: inherit;
 }
 
-/* --- Phần Hero và Nền --- */
+/* --- hero part and background image --- */
 .hero-section {
-    min-height: 65vh; /* Chiều cao tối thiểu của phần đầu */
+    min-height: 45vh;
     color: var(--text-light);
-
-    /* Lớp phủ tối trên hình nền - ĐÂY LÀ PHẦN QUAN TRỌNG */
+    
     background: 
         linear-gradient(var(--background-dark-overlay), var(--background-dark-overlay)), 
-        url(../images/project1_background.jpg); /* << THAY HÌNH CỦA BẠN VÀO ĐÂY */
+        url(../images/backgroundheader.jpg); 
 
     background-size: cover;
     background-position: center;
@@ -64,35 +70,46 @@ a {
     flex-direction: column;
 }
 
-/* --- Thanh điều hướng (Navbar) --- */
+.hero-content {
+    align-items: center;
+    text-align: left;
+    margin-top: 90px;
+    font-size: 1.8rem;
+    padding-left: 90px;
+    
+}
+.hero-content p{
+    font-size: 1rem;
+    margin-bottom: 1rem;    
+}
+
+/* --- Navbar---- */
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
     padding: 1.5rem 0;
 }
 
-
 .logo {
-  display: flex;               /* xếp theo hàng ngang */
-  align-items: center;         /* căn giữa theo chiều dọc */
-  gap: 8px;                    /* khoảng cách giữa logo và chữ */
+  display: flex;               
+  align-items: center;         
+  gap: 8px;                   
   line-height: 1.1;
 }
 
 .logo-image {
-  height: 40px;                /* chỉnh kích thước logo */
-  width: auto;                 /* giữ tỷ lệ gốc */
+  height: 40px;               
+  width: auto;                 
 }
 .logo-text {
   display: flex;
-  flex-direction: column;   /* xếp chữ theo chiều dọc */
+  flex-direction: column;   
 }
 
 .logo-main {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--shield-blue);
+    color: var(--shield-green);
 }
 
 .logo-sub {
@@ -105,46 +122,160 @@ a {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    margin: 0 auto;
+    gap: 120px;
+    color: var(--text-light);
+    font-weight: 500;  
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.nav-menu a {
-    color: var(--text-light);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
 
 .nav-menu a:hover {
-    color: var(--shield-blue);
+    color: var(--shield-green);
 }
 
-/* --- Nội dung chính giữa (Hero Content) --- */
-.hero-content {
-    /* Căn giữa nội dung theo chiều dọc và ngang */
-    flex-grow: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 5vh; /* Đẩy nội dung lên một chút */
-}
 
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    max-width: 800px;
-    margin-bottom: 1rem;
-}
 
-.hero-content p {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
 
+section {
+    margin-bottom: 60px; /* tạo khoảng cách giữa hai phần */
+    padding: 20px 40px;
+}
 /* --- Phần nội dung chính của trang (Main Content) --- */
 ul {margin-left: 20px;
     list-style-type:disc;}
 ol {margin-left: 20px;
     list-style-type:decimal;}
+
+/* Tổng thể phần Cybersecurity Specialist */
+section.intro {
+  background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  width: 85%;
+  margin: 50px auto;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Tiêu đề từng phần */
+section.intro h1 {
+  font-size: 1.8em;
+  color: #004aad;
+  border-bottom: 2px solid #009FE3;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* Đoạn văn mô tả */
+section.intro p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Danh sách công việc */
+section.intro ul,
+section.intro ol {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+section.intro ul li,
+section.intro ol li {
+  margin-bottom: 10px;
+}
+
+/* Ký hiệu đầu dòng */
+section.intro ul {
+  list-style-type: square;
+}
+
+section.intro ol {
+  list-style-type: decimal;
+}
+
+/* Làm cho phần cuối tách biệt */
+section.intro ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* Hiệu ứng hover nhẹ */
+section.intro:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Tổng thể phần middle */
+
+section.middle {
+  background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  width: 85%;
+  margin: 50px auto;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Tiêu đề từng phần */
+section.middle h1 {
+  font-size: 1.8em;
+  color: #004aad;
+  border-bottom: 2px solid #009FE3;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* Đoạn văn mô tả */
+section.middle p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Danh sách công việc */
+section.middle ul,
+section.middle ol {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+section.middle ul li,
+section.middle ol li {
+  margin-bottom: 10px;
+}
+
+/* Ký hiệu đầu dòng */
+section.middle ul {
+  list-style-type: square;
+}
+
+section.middle ol {
+  list-style-type: decimal;
+}
+
+/* Làm cho phần cuối tách biệt */
+section.middle ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* Hiệu ứng hover nhẹ */
+section.middle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
