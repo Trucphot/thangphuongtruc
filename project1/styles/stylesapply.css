@@ -120,5 +120,21 @@ a {
     color: var(--shield-green);
 }
 
+/* Footer */
+footer {
+  background-color: #0a3775;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #4da3ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffcc00;
+}
 
 
