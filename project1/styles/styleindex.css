@@ -24,10 +24,10 @@ main, .intro, .info-section, .vision-container, .links-section {
 
 /* Header */
 .header {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 a {
@@ -36,37 +36,32 @@ a {
 }
 
 .header-section {
-    min-height: 45vh;
-    color: #ffffff;
-    
-    background: 
-        linear-gradient(rgba(10, 10, 20, 0.75)), 
-        url(../images/backgroundheader.jpg); 
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    flex-direction: column;
+  min-height: 45vh;
+  color: #ffffff;
+  background: linear-gradient(rgba(10, 10, 20, 0.75)), url(../images/backgroundheader.jpg); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome {
-    align-items: center;
-    text-align: left;
-    margin-top: 90px;
-    font-size: 1.8rem;
-    padding-left: 90px;   
+  align-items: center;
+  text-align: left;
+  margin-top: 90px;
+  font-size: 1.8rem;
+  padding-left: 90px;   
 }
 .welcome p{
-    font-size: 1rem;
-    margin-bottom: 1rem;    
+  font-size: 1rem;
+  margin-bottom: 1rem;    
 }
 
 /* --- Navbar---- */
 .headerlogo {
-    display: flex;    
-    align-items: center;
-    padding: 1.5rem 0;
+  display: flex;    
+  align-items: center;
+  padding: 1.5rem 0;
 }
 
 .logo {
