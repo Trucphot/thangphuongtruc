@@ -21,11 +21,6 @@ body {
     color: #333;
 }
 
-footer {
-    background: url(../images/backgroundheader.jpg);
-    color: var(--text-light);
-}
-
 .container {
     width: 90%;
     max-width: 1400px;
