@@ -108,10 +108,22 @@ a {
     color: #00ff77;
 }
 
+/* --- Main Content Section --- */
+
+main {
+    background: linear-gradient(145deg, #f7fbff, #eaf3ff); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 85%;
+    margin: 50px auto;
+    line-height: 1.6;
+}
+
 /* Footer */
 footer {
   background-color: #0a3775;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding: 15px 0;
 }
