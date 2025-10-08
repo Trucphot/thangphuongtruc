@@ -35,11 +35,6 @@ body {
     color: #333;
 }
 
-footer {
-    background: url(../images/backgroundheader.jpg);
-    color: var(--text-light);
-}
-
 .container {
     width: 90%;
     max-width: 1400px;
@@ -133,19 +128,6 @@ a {
 .nav-menu a:hover {
     color: var(--shield-green);
 }
-
-
-
-
-section {
-    margin-bottom: 60px; /* tạo khoảng cách giữa hai phần */
-    padding: 20px 40px;
-}
-/* --- Phần nội dung chính của trang (Main Content) --- */
-ul {margin-left: 20px;
-    list-style-type:disc;}
-ol {margin-left: 20px;
-    list-style-type:decimal;}
 
 /* Tổng thể phần Cybersecurity Specialist */
 section.intro {
