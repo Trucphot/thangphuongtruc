@@ -23,64 +23,96 @@ main {
 }
 
 /* HEADER */
-.header-section {
-  background: url('../images/backgroundheader.jpg') center/cover no-repeat;
-  text-align: center;
-  padding-bottom: 20px;
+.header {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 80px;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-section {
+    min-height: 45vh;
+    color: #ffffff;
+    
+    background: 
+        linear-gradient(rgba(10, 10, 20, 0.75)), 
+        url(../images/backgroundheader.jpg); 
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    align-items: center;
+    text-align: left;
+    margin-top: 90px;
+    font-size: 1.8rem;
+    padding-left: 90px;   
+}
+.welcome p{
+    font-size: 1rem;
+    margin-bottom: 1rem;    
+}
+
+/* --- Navbar---- */
+.headerlogo {
+    display: flex;    
+    align-items: center;
+    padding: 1.5rem 0;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #58a6ff;
+  display: flex;               
+  align-items: center;         
+  gap: 8px;                   
+  line-height: 1.1;
 }
 
 .logo-image {
-  width: 60px;
-  height: 60px;
+  height: 40px;               
+  width: auto;                 
 }
-
 .logo-text {
   display: flex;
-  flex-direction: column;
-  font-weight: bold;
+  flex-direction: column;   
+}
+
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00ff77;
+}
+
+.logo-sub {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.5px;
 }
 
 .menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu a {
-  color: #040405;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    gap: 120px;
+    color: #ffffff;
+    font-weight: 500;  
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .menu a:hover {
-  text-decoration: underline;
+    color: #00ff77;
 }
 
-.welcome h1 {
-  font-size: 45px;
-  color: #000;
-}
-
-.welcome p {
-  font-size: 20px;
-  color: #000;
-}
 
 /* GROUP INFO BOX */
 .group-info-box {
