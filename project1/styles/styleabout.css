@@ -111,11 +111,10 @@ a {
 
 /* GROUP INFO BOX */
 .group-info-box {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(230, 245, 255, 0.85));
-  border: 2px solid rgba(120, 180, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #b3e5fc;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0, 100, 255, 0.15);
-  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 12px rgba(179, 229, 252, 0.4);
   padding: 40px;
   max-width: 900px;
   margin: 50px auto;
@@ -145,11 +144,10 @@ a {
 
 /* MEMBERS SECTION */
 .members-outer-box {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(220, 240, 255, 0.9));
-  border: 2px solid rgba(120, 180, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #b3e5fc;
   border-radius: 25px;
-  box-shadow: 0 10px 25px rgba(0, 100, 255, 0.15);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(179, 229, 252, 0.4);
   width: 90%;
   max-width: 1300px;
   margin: 50px auto;
@@ -183,10 +181,10 @@ a {
 }
 
 .member-box {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(230, 245, 255, 0.8));
-  border: 2px solid rgba(180, 210, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #b3e5fc;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 100, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(179, 229, 252, 0.4);
   padding: 25px;
   width: 280px;
   transition: 0.4s ease;
@@ -251,7 +249,7 @@ a {
 
 .links-and-table:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(179, 229, 252, 0.6);
+  border-color: rgba(100, 170, 255, 0.7);
 }
 
 .quick-links {

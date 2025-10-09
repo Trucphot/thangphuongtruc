@@ -17,7 +17,7 @@ body {
   flex-direction: column;
 }
 /* Alignment all the page (section) */
-main, .intro, .info-section, .vision-container, .links-section {
+main, .info-section, .vision-container, .links-section {
   margin: 0 80px;
   border-radius: 10px;
 }
