@@ -1,120 +1,4 @@
 
-/* Header styles */
-/*
-
-filename: [your name]
-
-author: [your name]
-
-created: [enter date]
-
-last modified: [enter date]
-
-description: [html files it refers to (if known)]
-
-
-
-/* --- Cài đặt chung và Biến --- */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; 
-    color: #333;
-}
-
-/* Header */
-.header {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.header-section {
-  min-height: 45vh;
-  color: #ffffff;
-  background: linear-gradient(rgba(10, 10, 20, 0.75)), url(../images/backgroundheader.jpg); 
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.welcome {
-  align-items: center;
-  text-align: left;
-  margin-top: 90px;
-  font-size: 1.8rem;
-  padding-left: 90px;   
-}
-.welcome p{
-  font-size: 1rem;
-  margin-bottom: 1rem;    
-}
-
-/* --- Navbar---- */
-.headerlogo {
-  display: flex;    
-  align-items: center;
-  padding: 1.5rem 0;
-}
-
-.logo {
-  display: flex;               
-  align-items: center;         
-  gap: 8px;                   
-  line-height: 1.1;
-}
-
-.logo-image {
-  height: 40px;               
-  width: auto;                 
-}
-.logo-text {
-  display: flex;
-  flex-direction: column;   
-}
-
-.logo-main {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #00ff77;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
-    gap: 120px;
-    color: #ffffff;
-    font-weight: 500;  
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.menu a:hover {
-    color: #00ff77;
-}
-
 /* Tổng thể phần Cybersecurity Specialist */
 section.intro {
   background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
@@ -124,7 +8,6 @@ section.intro {
   width: 85%;
   margin: 50px auto;
   line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
@@ -180,8 +63,6 @@ section.intro:hover {
 }
 
 
-
-
 /* Tổng thể phần middle */
 
 section.middle {
@@ -192,7 +73,6 @@ section.middle {
   width: 85%;
   margin: 50px auto;
   line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
@@ -246,29 +126,7 @@ section.middle:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
-/* Footer */
-footer {
-  background-color: #0a3775;
-  text-align: center;
-  padding: 15px 0;
-}
 
-footer {
-  background-color: #0a3775;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-}
-
-footer a {
-  color: #4da3ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #ffcc00;
-}
 aside {
   background-color: #f0f8ff; /* xanh nhạt đồng bộ với nội dung chính */
   border-left: 4px solid #0078d7; /* viền xanh Microsoft-style */
@@ -277,7 +135,6 @@ aside {
   padding: 20px 25px;
   margin: 40px auto;
   width: 80%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 aside h3 {
