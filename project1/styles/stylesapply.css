@@ -21,6 +21,11 @@ main {
 fieldset {
     border: none;
 }
+.personal-details {
+    border-bottom: 2px solid #00367c;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
 h3 {
     font-size: 20px;
     font-weight: 500;

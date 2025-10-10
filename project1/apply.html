@@ -40,11 +40,10 @@
     <!-- Main Section -->
   <main>    
     <div class="container">        
-    <br /> 
     <h2>Aplication Form</h2>
      
     <form id="applicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-      <fieldset>
+      <fieldset class="personal-details">
         <h3>Personal Details</h3>    
       <div class="form-row">
         <div class="form-group">
@@ -119,7 +118,6 @@
       </div>
       </fieldset>
 
-      <br /><hr />
       <fieldset>
         <h3>Employment Information</h3>
       <div class="form-row2">
@@ -151,14 +149,15 @@
         </div>
         
         <div class="form-group2">
-        <label for="otherskills">Other skills:</label><br />
+        <label for="otherskills">Other skills:</label>
         <textarea id="otherskills" name="otherskills" rows="5" placeholder="Please list any other relevant skills here..." maxlength="500"></textarea>
         </div>
       </div>
       </fieldset>
        <button type="submit">Submit</button>
-    </form>    
-  </main><br /><hr />    
+    </form>
+    </div>    
+  </main>   
   <!-- Footer -->
   <footer>
     <p>
