@@ -1,18 +1,4 @@
-/* Header styles */
 
-/* --- General Settings and Variables --- */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #f4f4f4; 
-    color: #333;
-}
 
 .container {
     width: 90%;
@@ -20,92 +6,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* --- hero part and background image --- */
-.hero-section {
-    min-height: 45vh;
-    color: #ffffff;
-    
-    background: 
-        linear-gradient(rgba(10, 10, 20, 0.75)), 
-        url(../images/backgroundheader.jpg); 
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-content {
-    align-items: center;
-    text-align: left;
-    margin-top: 90px;
-    font-size: 1.8rem;
-    padding-left: 90px;
-    
-}
-.hero-content p{
-    font-size: 1rem;
-    margin-bottom: 1rem;    
-}
-
-/* --- Navbar---- */
-.navbar {
-    display: flex;    
-    align-items: center;
-    padding: 1.5rem 0;
-}
-
-.logo {
-  display: flex;               
-  align-items: center;         
-  gap: 8px;                   
-  line-height: 1.1;
-}
-
-.logo-image {
-  height: 40px;               
-  width: auto;                 
-}
-.logo-text {
-  display: flex;
-  flex-direction: column;   
-}
-
-.logo-main {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #00ff77;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
-    gap: 120px;
-    color: #ffffff;
-    font-weight: 500;  
-    text-decoration: none;
-    font-size: 20px;
-}
-
-
-.nav-menu a:hover {
-    color: #00ff77;
 }
 
 /* --- Main Content Section --- */
@@ -119,23 +19,3 @@ main {
     margin: 50px auto;
     line-height: 1.6;
 }
-
-/* Footer */
-footer {
-  background-color: #0a3775;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-}
-
-footer a {
-  color: #4da3ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #ffcc00;
-}
-
-
