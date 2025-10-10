@@ -34,8 +34,8 @@ main {
   border-color: rgba(100, 180, 255, 0.7);
 }
 
-.group-logo {
-  width: 180px;
+.groupimg {
+  width: 400px;
   margin: 0 auto 20px;
   border-radius: 15px;
   display: block;
