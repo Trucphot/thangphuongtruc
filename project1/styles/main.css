@@ -26,7 +26,7 @@ a {
 .header-section {
   min-height: 45vh;
   color: #ffffff;
-  background: linear-gradient(rgba(10, 10, 20, 0.75)), url(../images/backgroundheader.jpg); 
+  background: url(../images/backgroundheader.jpg); 
   background-size: cover;
   background-position: center;
   display: flex;
