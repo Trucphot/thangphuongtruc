@@ -1,6 +1,7 @@
 
 h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 60px;}
+h2 {font-size: 35px;}
 section.intro {
   background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
   border-radius: 12px;
@@ -57,7 +58,7 @@ section.intro:hover {
   transition: all 0.3s ease;
 }
 
-/* Tổng thể phần middle */
+
 
 section.middle {
   background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
@@ -67,7 +68,6 @@ section.middle {
   width: 85%;
   margin: 50px auto;
   line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
@@ -127,6 +127,8 @@ aside {
   margin-right: -25px;
   width: 25%;
   float: right;
+  position: relative;
+  z-index: 100;
 }
 
 aside h6 {
