@@ -1,5 +1,5 @@
 
-/* Tổng thể phần Cybersecurity Specialist */
+
 section.intro {
   background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
   border-radius: 12px;
@@ -17,7 +17,7 @@ section.intro h2 {
   border-bottom: 2px solid #009FE3;
   padding-bottom: 8px;
   margin-top: 40px;
-  margin-bottom: 15px; max-resolution: 300dpi;
+  margin-bottom: 15px;
 }
 
 section.intro p {
@@ -61,7 +61,7 @@ section.intro:hover {
 }
 
 
-/* Tổng thể phần middle */
+
 
 section.middle {
   background: linear-gradient(145deg, #f7fbff, #eaf3ff); /* nền sáng dịu */
@@ -127,44 +127,51 @@ section.middle:hover {
 }
 
 aside {
-  clear: both;
-  background-color: #f0f8ff; 
-  border: 2px solid #0078d7; 
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px 25px;
-  margin: -305px ;
-  margin-right: -25px;
-  width: 25%;
-  float: right;
+    clear: both;
+    background-color: #f0f8ff; 
+    border: 2px solid #0078d7; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em; 
+    
+   
+    position: relative; 
+    margin: 0; 
+    top: -320px; 
+    right: 0; 
+    
+    width: 25%; 
+    float: right; 
+    box-sizing: border-box; 
+    z-index: 100; 
 }
 
 
 aside h2 {
   color: #004aad;
   border-bottom: 2px solid #009FE3;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
+  padding-bottom: 0.5em; 
+  margin-bottom: 1em; 
   font-size: 1.5em;
 }
 
 aside p {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 1em; 
 }
 
 aside ul {
   list-style-type: "square" ;
-  margin-left: 15px;
+  margin-left: 1em; 
 }
 
 aside ul li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
 }
 
 aside blockquote {
-  margin-top: 15px;
-  padding: 10px 15px;
+  margin-top: 1em; 
+  padding: 10px 15px; 
   background-color: #e6f3ff;
   border-left: 4px solid #0078d7;
   font-style: italic;
