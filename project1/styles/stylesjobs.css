@@ -129,7 +129,9 @@ aside {
   float: right;
   position: relative;
   z-index: 100;
+   transition: opacity 0.5s ease-in-out, transform 0.3s ease;
 }
+
 
 aside h6 {
   color: #004aad;
@@ -167,6 +169,7 @@ aside:hover {
   background-color: #e8f3ff;
   transform: scale(1.01);
   transition: all 0.3s ease;
+    opacity: 0; 
 }
 
 
